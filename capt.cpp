@@ -84,7 +84,7 @@ int main(int argc, char* argv[]) {
 
   libfreenect2::Registration* registration = new libfreenect2::Registration(dev->getIrCameraParams(), dev->getColorCameraParams());
 
-  while (terminate != 'q' && counter < cMax) {
+  while (terminate ~= 'q' && counter < cMax) {
     for (k=0; k<w*h; k++)
       accp[k] = 0;
 
